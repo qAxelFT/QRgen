@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from email.mime import image
 import tkinter
 import qrcode
