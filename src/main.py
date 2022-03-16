@@ -12,7 +12,7 @@ if(platform.system() == "Darwin"):
         files = os.listdir(save_path)
 else:
         save_path = "images/"
-        files = next(os.walk(f"{save_path}"))
+        files = os.listdir(save_path)
 
 file_count = len(files)
 
