@@ -7,7 +7,7 @@ import platform
 import os
 from PIL import ImageTk, Image
 
-if(platform.System == "Darwin"):
+if(platform.system() == "Darwin"):
         save_path = "../images/"
         files = os.listdir(save_path)
 else:
