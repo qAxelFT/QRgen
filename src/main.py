@@ -3,11 +3,17 @@ import tkinter
 import qrcode
 from tkinter import *
 from tkinter import ttk
+import platform
 import os
 from PIL import ImageTk, Image
 
-save_path = "images/"
-path, dirs, files = next(os.walk(f"{save_path}"))
+if(platform.System == "Darwin"):
+        save_path = "../images/"
+        files = os.listdir(save_path)
+else:
+        save_path = "images/"
+        files = next(os.walk(f"{save_path}"))
+
 file_count = len(files)
 
 def gen():
